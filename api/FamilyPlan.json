@@ -1,0 +1,160 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Family Plan",
+    "contact": {},
+    "version": "1.0"
+  },
+  "servers": [
+    {
+      "url": "https://test-middleware.clarodrive.com/api/v2/family-plan",
+      "variables": {}
+    }
+  ],
+  "paths": {
+    "/members": {
+      "get": {
+        "tags": [
+          "Misc"
+        ],
+        "summary": "Recuperar miembros",
+        "operationId": "Recuperarmiembros",
+        "parameters": [
+          {
+            "name": "Cookie",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string",
+              "example": "PHPSESSID=qnrsr7k2s6t86uue8fict39tf3; HKS=e98e24e280dd2c07a5c10e12703b130f981356d96d1b49bfeedf8bb7896034fc; PORTAL_REGION=%AB%2A%CA.%2BH%02%00; CD_USER=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnYW1pZmljYXRpb25JZCI6IjViMDgyZTNkMjNlM2RiNGRhNTE4MzkzYSIsInVzZXJoYXNoIjoiTWpRNU1qSXlOVFo4TVRZeE5qRTROVGN6Tm54aFlqZzVNVGhqWWpSaFptSXhZalppWXpnNE9HVTVOVEF4TnpKa01HRXhNMkpsWlRoaVpXRTNNR1E1Wmpoa1pHRTVNUT09IiwiZW1haWwiOiJhbGV4dGVzdEBnbWFpbC5jb20ifQ.OdKmOGdSZ_bWEvzfmc9gUpbThKslK887zBI7XvGEioc"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/cancel-invitation": {
+      "post": {
+        "tags": [
+          "Misc"
+        ],
+        "summary": "cancel invitation",
+        "operationId": "cancelinvitation",
+        "parameters": [
+          {
+            "name": "Cookie",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string",
+              "example": "PHPSESSID=qnrsr7k2s6t86uue8fict39tf3; HKS=8e2aa625cfc335ee24a0535192ee7c592fcde777155c6a7763a0700b8db16743; PORTAL_REGION=%AB%2A%CA.%2BH%02%00; CD_USER=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnYW1pZmljYXRpb25JZCI6IjViMDgyZTNkMjNlM2RiNGRhNTE4MzkzYSIsInVzZXJoYXNoIjoiTWpRNU1qSXlOVFo4TVRZeE5qRTROVGN6Tm54aFlqZzVNVGhqWWpSaFptSXhZalppWXpnNE9HVTVOVEF4TnpKa01HRXhNMkpsWlRoaVpXRTNNR1E1Wmpoa1pHRTVNUT09IiwiZW1haWwiOiJhbGV4dGVzdEBnbWFpbC5jb20ifQ.OdKmOGdSZ_bWEvzfmc9gUpbThKslK887zBI7XvGEioc; JWT_BACKEND_AUTH=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOiI1YjA4MmUzZDIzZTNkYjRkYTUxODM5M2EiLCJwcm92aWRlciI6ImVtYWlsIiwidXBkYXRlYWJsZSI6dHJ1ZSwiY291bnRyeSI6Ik1YIiwiaXNGYW1pbHlQbGFuR3Vlc3QiOmZhbHNlLCJzZXNzaW9uIjoiKDVrb2ZrdzNqVkVHYlZzbkhkM1RIMFNJZkRpdVwvYkVRYXZ0QmU2WmRjaFRRPSkiLCJleHAiOjE3NDI0MTYxMzcsIm5ldyI6ZmFsc2UsImVtYWlsIjoiYWxleHRlc3RAZ21haWwuY29tIiwiZGlzcGxheW5hbWUiOiJBbGVqbyBtYW9oIiwicGhvbmUiOmZhbHNlLCJsYW5ndWFnZSI6ImVzX01YIiwicXVvdGEiOiIyMDBHIiwiZ2F0ZXdheSI6ImFtY29nYXRlIiwiaW5zdGFuY2UiOiJodHRwczpcL1wvdGVzdC0wMDAwLmNsYXJvZHJpdmUuY29tXC8ifQ.F5ia2R8wHFoshsg5xvcAYn7--4yddjRiV3R0LRbXeA8; PORTAL_REGION=%AB%2A%CA.%2BH%02%00; JWT_BACKEND_AUTH=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOiI1YjA4MmUzZDIzZTNkYjRkYTUxODM5M2EiLCJwcm92aWRlciI6ImVtYWlsIiwidXBkYXRlYWJsZSI6dHJ1ZSwiY291bnRyeSI6Ik1YIiwiaXNGYW1pbHlQbGFuR3Vlc3QiOmZhbHNlLCJzZXNzaW9uIjoiKDVrb2ZrdzNqVkVHYlZzbkhkM1RIMFNJZkRpdVwvYkVRYXZ0QmU2WmRjaFRRPSkiLCJleHAiOjE3NDI0MTYxMzcsIm5ldyI6ZmFsc2UsImVtYWlsIjoiYWxleHRlc3RAZ21haWwuY29tIiwiZGlzcGxheW5hbWUiOiJBbGVqbyBtYW9oIiwicGhvbmUiOmZhbHNlLCJsYW5ndWFnZSI6ImVzX01YIiwicXVvdGEiOiIyMDBHIiwiZ2F0ZXdheSI6ImFtY29nYXRlIiwiaW5zdGFuY2UiOiJodHRwczpcL1wvdGVzdC0wMDAwLmNsYXJvZHJpdmUuY29tXC8ifQ.F5ia2R8wHFoshsg5xvcAYn7--4yddjRiV3R0LRbXeA8"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "encoding": {},
+              "schema": {
+                "required": [
+                  "inviteId"
+                ],
+                "type": "object",
+                "properties": {
+                  "inviteId": {
+                    "type": "string",
+                    "example": "{{idFamilyPlan}}"
+                  }
+                }
+              }
+            }
+          },
+          "required": false
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/push-out": {
+      "post": {
+        "tags": [
+          "Misc"
+        ],
+        "summary": "Remove member from family plan",
+        "operationId": "Removememberfromfamilyplan",
+        "parameters": [
+          {
+            "name": "Accept",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string",
+              "example": "application/json"
+            }
+          },
+          {
+            "name": "Cookie",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "string",
+              "example": "PHPSESSID=qnrsr7k2s6t86uue8fict39tf3; HKS=8e2aa625cfc335ee24a0535192ee7c592fcde777155c6a7763a0700b8db16743; PORTAL_REGION=%AB%2A%CA.%2BH%02%00; CD_USER=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnYW1pZmljYXRpb25JZCI6IjViMDgyZTNkMjNlM2RiNGRhNTE4MzkzYSIsInVzZXJoYXNoIjoiTWpRNU1qSXlOVFo4TVRZeE5qRTROVGN6Tm54aFlqZzVNVGhqWWpSaFptSXhZalppWXpnNE9HVTVOVEF4TnpKa01HRXhNMkpsWlRoaVpXRTNNR1E1Wmpoa1pHRTVNUT09IiwiZW1haWwiOiJhbGV4dGVzdEBnbWFpbC5jb20ifQ.OdKmOGdSZ_bWEvzfmc9gUpbThKslK887zBI7XvGEioc; JWT_BACKEND_AUTH=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOiI1YjA4MmUzZDIzZTNkYjRkYTUxODM5M2EiLCJwcm92aWRlciI6ImVtYWlsIiwidXBkYXRlYWJsZSI6dHJ1ZSwiY291bnRyeSI6Ik1YIiwiaXNGYW1pbHlQbGFuR3Vlc3QiOmZhbHNlLCJzZXNzaW9uIjoiKDVrb2ZrdzNqVkVHYlZzbkhkM1RIMFNJZkRpdVwvYkVRYXZ0QmU2WmRjaFRRPSkiLCJleHAiOjE3NDI0MTYxMzcsIm5ldyI6ZmFsc2UsImVtYWlsIjoiYWxleHRlc3RAZ21haWwuY29tIiwiZGlzcGxheW5hbWUiOiJBbGVqbyBtYW9oIiwicGhvbmUiOmZhbHNlLCJsYW5ndWFnZSI6ImVzX01YIiwicXVvdGEiOiIyMDBHIiwiZ2F0ZXdheSI6ImFtY29nYXRlIiwiaW5zdGFuY2UiOiJodHRwczpcL1wvdGVzdC0wMDAwLmNsYXJvZHJpdmUuY29tXC8ifQ.F5ia2R8wHFoshsg5xvcAYn7--4yddjRiV3R0LRbXeA8; PORTAL_REGION=%AB%2A%CA.%2BH%02%00; JWT_BACKEND_AUTH=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOiI1YjA4MmUzZDIzZTNkYjRkYTUxODM5M2EiLCJwcm92aWRlciI6ImVtYWlsIiwidXBkYXRlYWJsZSI6dHJ1ZSwiY291bnRyeSI6Ik1YIiwiaXNGYW1pbHlQbGFuR3Vlc3QiOmZhbHNlLCJzZXNzaW9uIjoiKDVrb2ZrdzNqVkVHYlZzbkhkM1RIMFNJZkRpdVwvYkVRYXZ0QmU2WmRjaFRRPSkiLCJleHAiOjE3NDI0MTYxMzcsIm5ldyI6ZmFsc2UsImVtYWlsIjoiYWxleHRlc3RAZ21haWwuY29tIiwiZGlzcGxheW5hbWUiOiJBbGVqbyBtYW9oIiwicGhvbmUiOmZhbHNlLCJsYW5ndWFnZSI6ImVzX01YIiwicXVvdGEiOiIyMDBHIiwiZ2F0ZXdheSI6ImFtY29nYXRlIiwiaW5zdGFuY2UiOiJodHRwczpcL1wvdGVzdC0wMDAwLmNsYXJvZHJpdmUuY29tXC8ifQ.F5ia2R8wHFoshsg5xvcAYn7--4yddjRiV3R0LRbXeA8"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "encoding": {},
+              "schema": {
+                "required": [
+                  "member_id"
+                ],
+                "type": "object",
+                "properties": {
+                  "member_id": {
+                    "type": "string",
+                    "example": "6059177e78a51d15c422f6eb"
+                  }
+                }
+              }
+            }
+          },
+          "required": false
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        },
+        "deprecated": false
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "Misc",
+      "description": ""
+    }
+  ]
+}
